@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+
+/* Navigation section  */
+
+.navbar{
+    width: 100%;
+    font-family: sans-serif;
+    padding: 15px 20px 20px 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar .logo a{
+    color: #fd502e;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.navbar .logo a span{
+    color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    display: block;
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 50px;
+    transition: color 0.3s ease;
+}   
+
+.navbar .menu li a:hover{
+    color: #fd502e;
+}
+
+.nav a#active,
+.nav #active:hover{
+    color: #fd502e;
+}
+
+
+/* slider section  */
+
+.maindiv{
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    background-image: url(images/1.jpg);
+    background-position: center;
+    background-size: cover;
+    animation:slider 25s infinite linear;
+}
+
+@keyframes slider{
+    0%{background-image: url(images/1.jpg);}
+    45%{background-image: url(images/2.jpg);}
+    75%{background-image: url(images/3.jpg);}
+}
+
+
+/* clients section  */
+
+.text1{
+    margin-top: 50%;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 25px;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.text1 p{
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+.text1 h2{
+    font-size: 35px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+}
+
+.box{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+
+.box i{
+    color: white;
+    background: #fd502e;
+    padding: 25px;
+    border-radius: 3rem;
+    font-size: 35px;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.box p{
+    margin-top: 25%;
+    font-size: 18px;
+    font-weight: 500;
+    color: #6c757d;
+}
+
+
+
+/* Main features section  */
+
+.text2{
+    text-align: center;
+    padding-bottom: 40px;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.text2 h2{
+    font-size: 35px;
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+
+.text2 p{
+    padding-bottom: 70px;
+
+}
+
+.text2 img{
+    cursor: pointer;
+}
+
+
+
+/* SEO section  */
+
+.seo{
+    width: 100%;
+    height: auto;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    padding: 50px 100px;
+}
+
+.seo .fonts{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    justify-content: space-between;
+}
+
+.seo .fonts .icons{
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+.seo .fonts .para{
+    padding-left: 10px;
+    padding-top: 10px;
+    color: #6c757d;
+}
+
+.seo .fonts .para h2{
+    padding-bottom: 22px;
+    font-size: 25px;
+    color: rgb(58, 49, 49);
+    font-size: 23px;
+    font-weight: 500;
+}
+
+
+.seo .fonts i{
+    color: white;
+    background: #fd502e;
+    padding: 25px;
+    border-radius: 3rem;
+    font-size: 35px;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+
+/* custom support section  */
+
+
+.custom{
+    background: #fd502e;
+    color: #fff;
+    height: 350px;
+    text-align: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.custom h1{
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+
+.custom p{
+    font-size: 15px;
+    opacity: 0.6;
+    padding-bottom: 60px;
+}
+
+.custom span{
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    background: #fff;
+    border-radius: 2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom span:hover{
+    background: #fd502e;
+    color: #fff;
+}
+
+
+
+/* People about section  */
+
+.people{
+    background: #f8f9fa;
+}
+
+.people .about{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.about h2{
+    font-size: 32px;
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+
+.about h3{
+    padding-top: 80px;
+    font-size: 25px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.people .boxs{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 20px 100px;
+}
+
+.people .says{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.people .says img{
+    border-radius: 2rem;
+    cursor: pointer;
+    filter: grayscale(0%);
+    transition: 0.5s ease;
+}
+
+.people .says img:hover{
+    transform: scale(1.2);
+}
+
+.people .says h1{
+    padding-top: 25px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.people .says p{
+    padding-top: 10px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+
+/* Footer section  */
+
+.footer .foot{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 20px 100px;
+    background: #343a40;
+    color: #fff;
+}
+
+.footer .multi{
+    width: 100%;
+    height: 350px;
+    padding-right: 30px;
+}
+
+.footer .multi h1{
+    font-size: 23px;
+    padding-top: 20px;
+    font-weight: 400;
+    padding-bottom: 40px;
+}
+
+.footer .multi p{
+    font-size: 14px;
+    text-align: justify;
+    padding-bottom: 30px;
+}
+
+.footer .multi i{
+    font-size: 12px;
+    padding: 12px 12px;
+    background: #000;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer .multi i:hover{
+    background: #fff;
+    color: #000;
+}
+
+.footer .posts{
+    width: 100%;
+    height: 300px;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+.footer .posts h1{
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.footer .posts h5{
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.footer .contact{
+    padding-top: 20px;
+    width: 100%;
+    height: 300px;
+}
+
+.footer .contact h1{
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 35px;
+}
+
+.footer .contact address{
+    padding-top: 20px;
+    padding-bottom: 25px;
+    cursor: pointer;
+}
+
+.footer .contact address i{
+    padding-right: 5px;
+    font-size: 20px;
+}
+
+.footer .contact p{
+    padding-top: 20px;
+    padding-bottom: 25px;
+    cursor: pointer;
+}
+
+.footer .contact p:hover{
+    text-decoration: underline;
+}
+
+.footer .contact p i{
+    font-size: 25px;
+    padding-right: 5px;
+}
+
+.footer .contact span i{
+    padding-top: 20px;
+    padding-bottom: 25px;
+    font-size: 25px;
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+.footer .contact span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* last end section  */
+
+.end{
+    background: black;
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    font-family: sans-serif;
+    padding: 15px 20px 20px 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+.end .left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.left .menu-section li{
+    list-style: none;
+    display: inline-block;
+}
+
+.left .menu-section li a{
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 20px;
+    transition: all 0.3s ease-in-out;
+} 
+
+.left .menu-section li a:hover{
+    color: #fd502e;
+}
+
